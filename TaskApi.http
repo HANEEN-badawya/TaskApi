@@ -4,3 +4,32 @@ GET {{TaskApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+@TaskApi_HostAddress = http://localhost:5052
+
+GET {{TaskApi_HostAddress}}/tasks
+
+###
+
+GET {{TaskApi_HostAddress}}/tasks/1
+
+###
+
+POST {{TaskApi_HostAddress}}/tasks
+Content-Type: application/json
+
+{
+  "title": "Learn ASP.NET Core"
+}
+
+###
+
+PUT {{TaskApi_HostAddress}}/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Updated Task"
+}
+
+###
+
+DELETE {{TaskApi_HostAddress}}/tasks/1
