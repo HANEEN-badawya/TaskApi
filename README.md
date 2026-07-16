@@ -34,3 +34,20 @@ http://localhost:5052/docs
 | POST | /tasks |
 | PUT | /tasks/{id} |
 | DELETE | /tasks/{id} |
+
+
+## Curl Example
+
+```bash
+curl -i http://localhost:5052/tasks
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+  {
+    Id = 1,
+        Title= "study api",
+        Done = true
+  }
+]
